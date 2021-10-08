@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Food Decider</string>
+    <string name="add_new_food">add new food…</string>
+    <string name="welcome_text">ADEQUATE DIET, \nWE TAKE CARE OF YOU</string>
+    <string name="add_food">ADD FOOD</string>
+    <string name="food_deciderImage">food_deciderImage</string>
+</resources>

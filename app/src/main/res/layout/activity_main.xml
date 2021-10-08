@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/welcome_text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/foodImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="18dp"
+        android:contentDescription="@string/food_deciderImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/food_decider" />
+
+    <EditText
+        android:id="@+id/addFoodEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints="addNewFood"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="@string/add_new_food"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodImage"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/addFoodButton"
+        android:layout_width="209dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/nude_200"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/add_food"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addFoodEditText"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
